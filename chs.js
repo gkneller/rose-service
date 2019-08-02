@@ -1,13 +1,12 @@
 var http = require("http");
-var url = require('url');
+var url = require("url");
 
 http
   .createServer(function(req, res) {
     var q = url.parse(req.url, true);
     var qdata = q.query;
     let height = 100;
-    if(!isNaN(qdata.height))
-      height = Number(qdata.height);
+    if (!isNaN(qdata.height)) height = Number(qdata.height);
     let width = height * 0.92;
     res.writeHead(200, { "Content-Type": "image/svg+xml" });
     res.write('<?xml version="1.0" encoding="utf-8"?>\n');

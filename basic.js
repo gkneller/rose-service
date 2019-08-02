@@ -55,7 +55,7 @@ exports.rose = function(height) {
     s +
     '" stroke-width="' +
     0.05 * r +
-    '" />\n';
+    '" fill="none" />\n';
 
   // Thin circle 55% of radius
   result +=
@@ -67,7 +67,348 @@ exports.rose = function(height) {
     0.55 * r +
     '" stroke="' +
     s +
-    '" stroke-width="1" />\n';
+    '" stroke-width="1" fill="none" />\n';
+
+  // Inner Star
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 1.1 +
+    "," +
+    r * 0.9 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(45 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 0.9 +
+    "," +
+    r * 0.9 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(45 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 1.1 +
+    "," +
+    r * 0.9 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(135 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 0.9 +
+    "," +
+    r * 0.9 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(135 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 1.1 +
+    "," +
+    r * 0.9 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(225 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 0.9 +
+    "," +
+    r * 0.9 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(225 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 1.1 +
+    "," +
+    r * 0.9 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(315 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.45 * r +
+    " " +
+    r * 0.9 +
+    "," +
+    r * 0.9 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(315 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  // Large Star
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 1.15 +
+    "," +
+    r * 0.85 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(0 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 0.85 +
+    "," +
+    r * 0.85 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(0 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 1.15 +
+    "," +
+    r * 0.85 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(90 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 0.85 +
+    "," +
+    r * 0.85 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(90 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 1.15 +
+    "," +
+    r * 0.85 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(180 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 0.85 +
+    "," +
+    r * 0.85 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(180 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 1.15 +
+    "," +
+    r * 0.85 +
+    '" style="fill:black;stroke:black;stroke-width:1" transform="rotate(270 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  result +=
+    '<polygon points="' +
+    r +
+    "," +
+    r +
+    " " +
+    r +
+    "," +
+    0.15 * r +
+    " " +
+    r * 0.85 +
+    "," +
+    r * 0.85 +
+    '" style="fill:white;stroke:black;stroke-width:1" transform="rotate(270 ' +
+    r +
+    " " +
+    r +
+    ')" />';
+
+  // Cardinal points
+  result +=
+    '<text x="' +
+    r +
+    '" y="' +
+    0.05 * h +
+    '" font-family="serif" font-size="' +
+    h * 0.05 +
+    '" text-anchor="middle" fill="black">N</text>';
+
+  result +=
+    '<text x="' +
+    w +
+    '" y="' +
+    r +
+    '" font-family="serif" font-size="' +
+    h * 0.05 +
+    '" text-anchor="end" dominant-baseline="middle" fill="black">E</text>';
+
+  result +=
+    '<text x="' +
+    r +
+    '" y="' +
+    h +
+    '" font-family="serif" font-size="' +
+    h * 0.05 +
+    '" text-anchor="middle" fill="black">S</text>';
+
+  result +=
+    '<text x="0" y="' +
+    r +
+    '" font-family="serif" font-size="' +
+    h * 0.05 +
+    '" text-anchor="left" dominant-baseline="middle" fill="black">W</text>';
 
   // Close SVG tag
   result += "</svg>\n";
