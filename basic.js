@@ -5,7 +5,7 @@
  */
 
 /**
- * Returns strng containing SVG for a basic compass rose.
+ * Returns string containing SVG for a basic compass rose.
  * @param {number} height - height of the SVG to produce
  * @return {string} String containing the SVG
  * @throws {TypeError} Argument height must be a non-empty number.
