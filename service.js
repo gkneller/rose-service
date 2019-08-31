@@ -79,14 +79,13 @@ http
       try {
         svg = basic.rose(height);
       } catch (err) {
-        console.log(err.message);
+        console.error(err.message);
       }
     } else if (type === "chs") {
       try {
         svg = chs.rose(height, d, c, y);
-        console.log(svg);
       } catch (err) {
-        console.log(err.message);
+        console.error(err.message);
       }
     }
 
